@@ -14,10 +14,12 @@ public class test : MonoBehaviour
     public GameObject live2dFemale;
 
     public GameObject backgroundFemale;
+    public GameObject vfx_firework;
+    public GameObject vfx_sukura;
 
     private void Start()
     {
-        SwitchToMale();
+        SwitchToFemale();
         //SwitchToFemale();
     }
 
@@ -27,6 +29,8 @@ public class test : MonoBehaviour
         backgroundMale.SetActive(true);
         live2dFemale.SetActive(false);
         live2dMale.SetActive(true);
+        vfx_firework.SetActive(true);
+        vfx_sukura.SetActive(false);
         
     }
 
@@ -36,6 +40,8 @@ public class test : MonoBehaviour
         backgroundMale.SetActive(false);
         live2dFemale.SetActive(true);
         live2dMale.SetActive(false);
+        vfx_firework.SetActive(false);
+        vfx_sukura.SetActive(true);
     }
     // public GameObject cube;
     // public InputField inputField;
