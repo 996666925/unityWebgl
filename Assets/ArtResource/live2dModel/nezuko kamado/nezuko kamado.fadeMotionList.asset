@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 403ae2dd693bb1d4b924f6b8d206b053, type: 3}
   m_Name: nezuko kamado.fadeMotionList
   m_EditorClassIdentifier: 
-  MotionInstanceIds: 1ac5ffff0cc5ffff02c5ffff
+  MotionInstanceIds: 0ad7ffff00d7fffff6d6ffff
   CubismFadeMotionObjects:
   - {fileID: 11400000, guid: 418ecb2ef5818234f9ef5ac8c78676a3, type: 2}
   - {fileID: 11400000, guid: fae09e771ea48cb40a1c1382544cbab4, type: 2}

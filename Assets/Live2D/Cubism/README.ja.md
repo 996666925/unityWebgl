@@ -2,9 +2,11 @@
 
 ---
 
-# CubismUnityComponents
+# Cubism Unity Components
 
-Unity用のCubismSDKのオープンコンポーネントです。
+Unity用のCubism SDKのオープンコンポーネントです。
+
+モデルをロードするには Live2D Cubism Core と組み合わせて使用します。
 
 SDKパッケージのダウンロードページをお探しの場合は、[ダウンロードページ](https://www.live2d.com/download/cubism-sdk/download-unity/)にアクセスしてください。
 
@@ -15,6 +17,12 @@ SDKパッケージのダウンロードページをお探しの場合は、[ダ�
 ## お知らせ
 
 ご使用前に[お知らせ](NOTICE.ja.md)をお読みください。
+
+## Cubism 5新機能や過去バージョンとの互換性について
+
+本 SDK はCubism 5に対応した製品です。  
+Cubism 5 Editorに搭載された新機能のSDK対応については [こちら](https://docs.live2d.com/cubism-sdk-manual/cubism-5-new-functions/)をご確認ください。  
+過去バージョンのCubism SDKとの互換性については [こちら](https://docs.live2d.com/cubism-sdk-manual/compatibility-with-cubism-5/)をご確認ください。
 
 ## 構造
 
@@ -46,18 +54,20 @@ Unity Editor拡張機能は、`./Assets/Live2D/Cubism/Editor`にあります。
 
 | Unity | バージョン |
 | --- | --- |
-| Tech Stream | 2022.2.18f1 |
-| LTS | 2021.3.24f1 |
-| LTS | 2020.3.47f1 |
+| Latest | 2023.2.5f1 (*1) |
+| LTS | 2022.3.17f1 |
+| LTS | 2021.3.34f1 |
+
+*1 ARMv7のAndroidは非対応です。
 
 | ライブラリ / ツール | バージョン |
 | --- | --- |
-| Android SDK / NDK | *1 |
-| Visual Studio 2022 | 17.5.5 |
+| Android SDK / NDK | *2 |
+| Visual Studio 2022 | 17.7.7 |
 | Windows SDK | 10.0.22621.0 |
-| Xcode | 14.2 |
+| Xcode | 15.2 |
 
-*1 Unityに組み込まれたライブラリまたは推奨ライブラリを使用してください。
+*2 Unityに組み込まれたライブラリまたは推奨ライブラリを使用してください。
 
 ### C#コンパイラ
 
@@ -73,17 +83,17 @@ https://docs.unity3d.com/ja/2018.4/Manual/CSharpCompiler.html
 
 | プラットフォーム | バージョン |
 | --- | --- |
-| Android | 13 |
-| iOS | 16.4.1 |
-| iPadOS | 16.4.1 |
+| Android | 14 |
+| iOS | 17.2.1 |
+| iPadOS | 17.2.1 |
 | Ubuntu | 20.04.6 |
-| macOS | 13.3.1 |
+| macOS | 14.2.1 |
 | Windows 10 | 22H2 |
-| Google Chrome | 113.0.5672.93 |
-| Chrome OS 64bit (x86_64) | 113.0.5672.114 |
-| Chrome OS 32bit (ARMv8) (*2) | 113.0.5672.114 |
+| Google Chrome | 120.0.6099.217 |
+| Chrome OS 64bit (x86_64) | 120.0.6099.203 |
+| Chrome OS 32bit (ARMv8) (*3) | 115.0.5790.160 |
 
-*2 Android向けAPKファイルでの動作確認です。
+*3 Android向けAPKファイルでの動作確認です。
 
 ## ブランチ
 
@@ -127,9 +137,9 @@ SDKの将来についてのフィードバックにも関心があります。Li
 - それ以外の場所ではLINQを使用せず、`foreach`よりも`for`を優先してください。
 - アクセス修飾子を明示的にするようにしてください。`void Update()`ではなく `private void Update()`を使いましょう。
 
-## コミュニティ
+## フォーラム
 
-ご不明な点がございましたら、公式のLive2Dコミュニティに参加して、他のユーザーと話し合ってください。
+ご不明な点がございましたら、公式のLive2Dフォーラムに参加して、他のユーザーと話し合ってください。
 
-- [Live2D 公式コミュニティ](https://creatorsforum.live2d.com/)
-- [Live2D community (English)](https://community.live2d.com/)
+- [Live2D 公式クリエイターズフォーラム](https://creatorsforum.live2d.com/)
+- [Live2D Creator's Forum(English)](https://community.live2d.com/)

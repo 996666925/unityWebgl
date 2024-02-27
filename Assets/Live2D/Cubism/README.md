@@ -6,6 +6,8 @@
 
 Welcome to the open components of the Cubism SDK for Unity.
 
+It is used in conjunction with the Live2D Cubism Core.
+
 Go [here](https://www.live2d.com/download/cubism-sdk/download-unity/) if you're looking for the download page of the SDK package.
 
 ## License
@@ -15,6 +17,13 @@ Please read the [license](LICENSE.md) before use.
 ## Notices
 
 Please read the [notices](NOTICE.md) before use.
+
+## Compatibility with Cubism 5 new features and previous Cubism SDK versions
+
+This SDK is compatible with Cubism 5.  
+For SDK compatibility with new features in Cubism 5 Editor, please refer to [here](https://docs.live2d.com/en/cubism-sdk-manual/cubism-5-new-functions/).  
+For compatibility with previous versions of Cubism SDK, please refer to [here](https://docs.live2d.com/en/cubism-sdk-manual/compatibility-with-cubism-5/).
+
 
 ## Structure
 
@@ -46,18 +55,20 @@ Resources like shaders and other assets are located in `./Assets/Live2D/Cubism/R
 
 | Unity | Version |
 | --- | --- |
-| Tech Stream | 2022.2.18f1 |
-| LTS | 2021.3.24f1 |
-| LTS | 2020.3.47f1 |
+| Latest | 2023.2.5f1 (*1) |
+| LTS | 2022.3.17f1 |
+| LTS | 2021.3.34f1 |
+
+*1 ARMv7 Android is not supported.
 
 | Library / Tool | Version |
 | --- | --- |
-| Android SDK / NDK | *1 |
-| Visual Studio 2022 | 17.5.5 |
+| Android SDK / NDK | *2 |
+| Visual Studio 2022 | 17.7.7 |
 | Windows SDK | 10.0.22621.0 |
-| Xcode | 14.2 |
+| Xcode | 15.2 |
 
-*1 Use libraries embedded with Unity or recommended.
+*2 Use libraries embedded with Unity or recommended.
 
 ### C# compiler
 
@@ -73,17 +84,17 @@ https://docs.unity3d.com/ja/2018.4/Manual/CSharpCompiler.html
 
 | Platform | Version |
 | --- | --- |
-| Android | 13 |
-| iOS | 16.4.1 |
-| iPadOS | 16.4.1 |
+| Android | 14 |
+| iOS | 17.2.1 |
+| iPadOS | 17.2.1 |
 | Ubuntu | 20.04.6 |
-| macOS | 13.3.1 |
+| macOS | 14.2.1 |
 | Windows 10 | 22H2 |
-| Google Chrome | 113.0.5672.93 |
-| Chrome OS 64bit (x86_64) | 113.0.5672.114 |
-| Chrome OS 32bit (ARMv8) (*2) | 113.0.5672.114 |
+| Google Chrome | 120.0.6099.217 |
+| Chrome OS 64bit (x86_64) | 120.0.6099.203 |
+| Chrome OS 32bit (ARMv8) (*3) | 115.0.5790.160 |
 
-*2 This is a confirmation of operation with APK files for Android.
+*3 This is a confirmation of operation with APK files for Android.
 
 ## Branches
 
@@ -127,9 +138,9 @@ Try to stick to the [Microsoft guidelines](https://msdn.microsoft.com/en-us/libr
 - Stay away from LINQ and prefer `for` over `foreach` anywhere else.
 - Try to be explicit. Prefer `private void Update()` over `void Update()`.
 
-## Community
+## Forum
 
-If you have any questions, please join the official Live2D community and discuss with other users.
+If you have any questions, please join the official Live2D forum and discuss with other users.
 
-- [Live2D community](https://community.live2d.com/)
-- [Live2D 公式コミュニティ (Japanese)](https://creatorsforum.live2d.com/)
+- [Live2D Creator's Forum](https://community.live2d.com/)
+- [Live2D 公式クリエイターズフォーラム (Japanese)](https://creatorsforum.live2d.com/)

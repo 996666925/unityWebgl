@@ -5,6 +5,70 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 
+## [5-r.1-beta.4] - 2024-01-18
+
+### Added
+
+* Add `CubismDrawableInspector` and parent Part display.
+* Add `CubismPartInspector` to show parent and descendant trees.
+* Add expression to check for index out of range with `CubismRenderer.OnMaskPropertiesDidChange()`.
+
+### Changed
+
+* Change `CubismPartsInspectorInspector` to be hierarchical.
+
+### Fixed
+
+* Fix an issue where models with a specific number of masks could not be drawn correctly.
+
+## [5-r.1-beta.3] - 2023-11-14
+
+### Added
+
+* Add `HarmonicMotion` sample scenes.
+
+### Changed
+
+* Change the version of the development project to `2021.3.30f1`.
+* Change the value of `Editor` to `AnyCPU` in the `Platform settings` of `Live2DCubismCore.bundle`.
+  * Apple Silicon version of the Unity Editor will work without the need to change `Platform settings`.
+
+### Fixed
+
+* Fix an error when displaying CubismRendererInspector for uninitialized models.
+* Fix condition for clearing AnimationCurve when Reimporting .motion3.json.
+* Fix fade calculation bug in MotionFade.
+
+
+## [5-r.1-beta.2] - 2023-09-28
+
+### Added
+
+* Added configuration file so that assemblies are split.
+
+### Changed
+
+* Replace the sample model `Mao` with the updated version that is compatible with Cubism 5.0.
+
+### Fixed
+
+* Fix an issue where 1 byte of memory was allocated unnecessarily.
+* Fix a bug where automatic eye blinking did not close the eyes fully.
+
+
+## [5-r.1-beta.1] - 2023-08-17
+
+### Changed
+
+* When importing a Cubism Model in Unity Workflow, the AnimatorController is now set to the Animator in the Model Prefab.
+* Change so that multiply and screen colors applied to parent parts are propagated to child parts.
+
+### Fixed
+
+* Fix an issue where information was being got using indexes instead of IDs when getting cdi3.json data.
+* Fix a bug that prevented proper operation when the Unity Transition was longer than the motion fade.
+
+
 ## [4-r.7] - 2023-05-25
 
 ### Added
@@ -303,6 +367,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 * Fix issue where Priority value was not reset after playing motion with CubismMotionController.
 
 
+[5-r.1-beta.4]: https://github.com/Live2D/CubismUnityComponents/compare/5-r.1-beta.3...5-r.1-beta.4
+[5-r.1-beta.3]: https://github.com/Live2D/CubismUnityComponents/compare/5-r.1-beta.2...5-r.1-beta.3
+[5-r.1-beta.2]: https://github.com/Live2D/CubismUnityComponents/compare/5-r.1-beta.1...5-r.1-beta.2
+[5-r.1-beta.1]: https://github.com/Live2D/CubismUnityComponents/compare/4-r.7...5-r.1-beta.1
 [4-r.7]: https://github.com/Live2D/CubismUnityComponents/compare/4-r.6.2...4-r.7
 [4-r.6.2]: https://github.com/Live2D/CubismUnityComponents/compare/4-r.6.1...4-r.6.2
 [4-r.6.1]: https://github.com/Live2D/CubismUnityComponents/compare/4-r.6...4-r.6.1
