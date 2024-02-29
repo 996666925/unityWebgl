@@ -17,10 +17,55 @@ public class test : MonoBehaviour
     public GameObject vfx_firework;
     public GameObject vfx_sukura;
 
+    public float intensity;
+    public SpriteRenderer spriteRenderer;
+    public Material mat;
+    public Color c;
+
     private void Start()
     {
-        SwitchToFemale();
         //SwitchToFemale();
+        intensity = 5;
+        mat = spriteRenderer.material;
+        c = mat.GetColor("_EmissionColor");
+        StartCoroutine(LightShake());
+
+        //SwitchToFemale();
+    }
+
+    public void SetIntensity(float _intensity)
+    {
+        float factor = Mathf.Pow(2, _intensity);
+        mat.SetColor("_EmissionColor",new Color(c.r*factor,c.g*factor,c.b*factor));
+    }
+
+    /// <summary>
+    /// make the sprite light and dark
+    /// </summary>
+    /// <returns></returns>
+    IEnumerator LightShake()
+    {
+        intensity = 0;
+        bool Isincrease = true;
+        while (true)
+        {
+            yield return new WaitForSeconds(0.1f);
+            if (Isincrease)
+            {
+                intensity += 0.05f;
+                SetIntensity(intensity);
+                if (intensity >= 3f)
+                    Isincrease = false;
+            }
+            else
+            {
+                intensity -= 0.1f;
+                SetIntensity(intensity);
+                if (intensity <= 0)
+                    Isincrease = true;
+            }
+            
+        }
     }
 
     public void SwitchToMale()
